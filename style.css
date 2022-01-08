@@ -1,0 +1,24 @@
+div {
+    display: inline-grid;
+    width: 500px;
+    height: 500px;
+    place-items: center;
+    position: relative;
+    border: 1px solid black;
+}
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+}
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}

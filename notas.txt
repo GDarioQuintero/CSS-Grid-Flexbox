@@ -1,0 +1,185 @@
+-----------------------------QUE ES UN DISIGN SYSTEM?----------------------------------
+
+Es una coleccion de componentes reutilizables guiados por estandares claros, se hace conmo un inventario de 
+colores, logotipos, encabezados, y de muchos componentes para luego hacer un concenso sobre como se deben diseñar, 
+codificar, presntar y hablar de las cosas.
+
+Shopify --------> Es un sitio web que te guia sobre que cosas no debes hacer a la hora de diseñar en fronted
+
+tailwindcss-----> Es un freiword de css que es muy bueno y que ademas tambiente guia sobre como hacer buenos 
+                  diseños
+
+----------------------------TENDENCIAS DE UI/UX-------------------------------------------
+
+--> Planificar antes de diseñar y antes de escribir cualquier linea de codigo
+
+--> Gerarquia: Tener unos elelmentos mas grandes que otro o que resalten segun la importamcia del elelmentos
+
+--> Contraste: Ayudar al usuario a elegir los elemntos correctos y de importancia, los colores deben de contrastar
+
+--> Proximidad: Ayudar al usuario a elegir los elementos corectos
+
+--> Balance: Dar mayor relevancia a los elementos importantes, utilizandolos colores y tamaños
+
+--> The state of UX in 2021: Para buscar inspiracion de como realizar nuestros diseños
+
+--> Micro interacciones, es excenlente revizarlo 
+
+--> Animaciones sin comprometer el performes o rendimiento del sitio
+
+--> Vistas 3D para siertos casos donde queramos mostrar algo especifico
+
+--> Realidad virtual
+
+--> realidad aumentada 
+
+--> Neumorfhism: tienen pro y contras en temas de accesibilidad, hace que el fondo y todos los componentes sean 
+    muy semejantes.
+
+--> Asymmetrical Layouts: saber distribuir los elementos y que sean figuras geometricas.
+
+--> Storytelling: Poder encontar historias en la web. 
+
+--> Importante realizar el curso de UI y de UX
+
+
+
+------------------------------WIREFRAMES Y COMUNICACION VISUAL SIMPLE, INTUITIVA Y ATRACTIVA--------------
+
+PASOS ANTES DE EMPEZAR CUALQUIER DISEÑO:
+
+1. Saber que quiero:
+
+2. Hacer un boceto (wireframes):  app.moqups.com ---> Herramienta para hacer bocetos
+
+3. Pensar enla guia de estilos: colores, tipografia, iconos y demas.
+
+--> Jugar el papel de usuarios
+--> ser un tester de nuestras web
+
+
+---------------------------------------------FIGMA----------------------------------------------------------
+
+--> Figma community: el github para diseñadores
+--> Pinteres te ayuda a nivel visual y te da ideas
+
+--> www.figma.com 
+
+
+-------------------------------------Que son los modern css layouts---------------------------------------
+
+--> Layout - Diseño : Ubicar tus cajas en un lugar que elijas con respectos a la ventana principal y el resto 
+    de cajas, organizacion principal de elementos.
+
+--> modern css layaouts: 
+
+    Progresivamente mejorado: Base solida e ir añadiendo estilos  complejos para navegadores que pudieran soportarlo
+
+    Adaptable a los usuarios: Amplia gama de navegadores
+                              Dispositivo
+                              resolucion de pantalla
+                              tamaños de fuente
+                              tecnologias de asistencia
+    
+    modularmente eficiente: Que css se pudiera dividir en fragmentos que funcionen de forma independiente
+                            para crear componentes de diseños que se pudieran utilizar de manera independiente
+    
+    Tipograficamente rico: Gran cantidad de tipografia
+
+
+------------------------------Tipos de layouts rapidos y faciles-------------------------------------------------
+
+Es de gran iportancia que revisemos los diferentes tipos de layouts que se pueden construir conpoco codigo y
+muy consistentes
+
+
+------------------------------------Css GRID y Flexbox --------------------------------------------------
+
+--> flexbox: Es un metodo que puede ayudar adistribuir el espacio entre los item de una interfaz y mejorar 
+    las capacidades de alinieacion.
+
+    Es un sistema unidericcional. osea que nos permite alinear pero en una sola direccion, horizontal o vertical.
+
+--> CSS GRID: Sistema de diseño que permite auto alinear elementos en columnas y filas, es decir es bidireccional
+
+
+--> ambos tienen esa relacion entre contenedores padre e hijos, con diferentes propiedades para cada uno.
+
+--> Ejes de aliniamiento: Justify - Horizontal,  align - vertical
+
+
+----------------------------------Cuando flexbox o caundo css grid------------------------------------------
+
+--> flexbox es mas apropiado para componentes de una aplicacion y diseños de pequeña escala - componentes pequeños
+    hay que tener encuenta el flujo normal del docuemnto.
+
+--> CSS GRID sirve para diseños mas grandes y de mayor escala. contenedores grandes.
+
+ 
+---------------------------------Flujo normal del documento---------------------------------------------------
+
+--> Display: Define el tipo de visualizacion de un elemento.
+
+-->Block: Se extiende ocupando todo el espacio disponible para elelmentos
+-->Inline: son como palabras en una oracion, se separan con  un espacio enblanco entre ellos.
+
+Display: grid; -------> lo que realmente esta diciendo es: -----> display: block grid;
+                        Sea una cuadricula internamente pero se comporte como bloque en relacion con otros 
+                        componentes
+
+Un elemento que tenga todos los atributos de bloque puede darle : Ancho, alto, padding, margin, y estirarse en todo 
+                                                                  el espacio
+                                                    
+--> Sin embargo a los hijos de un contenedor Display: Grid; se les ha dado un valor interno de grid. 
+
+--> Display: inline-flex;  El primer valor (inline), nos da el comportamiento externo---> comportameinto inline
+                           y el segundo valor (flex), nos da el comportamiento interno. --> comportameinto flex
+
+--> Beneficios del flujo normar (valores por defecto de los elementos):
+
+        * flujo mas agradabley legible
+        * cssmucho mas faciles
+        * menos probable de tener problemas de accesibilidad(ya que estas trabajando con el orden de los 
+          documentos, que es exactamente lo que esta haciendo un lector de pantalla)
+
+
+----------------------------------------Inline-block------------------------------------------------------
+
+--> BFC: Block formatting context ---> es un muni Layout dentro de un Layout
+
+--> Inline-block, tiene un hermanito ----> flow-root: Da un comportamiento de un caja en bloque
+
+
+-------------------------------------Posisionamiento en css --------------------------------------------------
+
+--> contexto de apilamientos: es al conceptualiacion tridimencional de los elementos html a lo largo del eje z
+                              imaginario relativoal usuario.
+
+                              
+------------------------------------SUbGRID--------------------------------------------------------------------
+
+hereda el tamaño de los track de los padres
+
+
+-----------------------------------Native Masonry Support--------------------------------------------------
+
+Un diseño de columnas de igual tamaño pero filas que se ajustan alcontenido
+
+.container {
+    display: grid;
+    grid-template-colunms: repeat(4, 1fr);
+    grid-template-row: masonry;
+}
+
+
+------------------------------------------CSS feacture queries: @Support (consulta de caracteristicas)------------------------------------------
+
+--> Nos permite si el navegador es compatible con ciertas catacteristicas
+
+@Support (display: flex) {
+    //Codigo a ejecutar si el navegador es compatible con las carateriticas pasadas en los parentesis
+}
+
+
+
+
